@@ -1,0 +1,25 @@
+<template name="ExpenseTable">
+  <h1> Table of all expenses</h1>
+
+  <table border = true>
+      <tr> <!-- Create the headers of the table -->
+        <td> <b> Item name </b> </td>
+        <td> <b> Cost </b> </td>
+      </tr>
+
+      <!-- For each item returned from the expensesList function (which gets values from the mongoDB database, we want to have a new table row with the name of the expense, as well as the amount expended -->
+      {{#each expensesList}}
+        <tr>
+          {{> IndividualExpense}}
+        </tr>
+      {{/each}}
+
+    </table>
+    
+</template>
+
+<template name="IndividualExpense">
+  <td> {{name}} </td> 
+  <td> {{price}} </td>
+  <td> <button class="delete"> Delete </button> </td>
+</template>

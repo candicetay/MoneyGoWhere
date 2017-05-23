@@ -1,0 +1,32 @@
+.expense-entry ul{
+	list-style-type: none;
+}
+
+.expense-entry li{
+	padding: 3px 10px;
+}
+
+.expense-entry input{
+	padding: 10px;
+	border-radius: 4px;
+	border:2px solid green;
+	width: 30%;
+	background: transparent;
+}
+
+.expense-entry input[type=submit]{
+	padding: 10px;
+	border-radius: 4px;
+	border-color: : 2px solid green;
+	background-color: green;
+	width: 10%;
+	color: white;
+	
+}
+
+.expense-entry input[type=submit]:hover{
+	transition-duration: 0.4s;
+	background-color: white;
+	border-color: : 2px solid green;
+	color: black;
+}
