@@ -6,9 +6,12 @@ SimpleSchema.extendOptions(['autoform']);
 export const Expenses = new Mongo.Collection("expenses");
 //Probably would want to defind some rules for this database later
 //(required fields, what fields there are, etc.)
-
-Expenses.attachSchema(new SimpleSchema({
+var Schemas = {};
+Schemas.Expense = new SimpleSchema({
 	name: {
+		type:String
+	},
+	category: {
 		type:String
 	},
 	price: {
@@ -18,4 +21,5 @@ Expenses.attachSchema(new SimpleSchema({
 	dateCreated : {
 		type: Date
 	}
-}));
+});
+Expenses.attachSchema(Schemas.Expense);
