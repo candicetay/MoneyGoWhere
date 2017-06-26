@@ -1,3 +1,5 @@
 body {
-	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	background: #E6E6FA;
+	background-image: url(".../client/layout/space.jpg");
 }
