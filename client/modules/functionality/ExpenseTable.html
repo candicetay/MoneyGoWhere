@@ -4,6 +4,7 @@
   <table border = true>
       <tr> <!-- Create the headers of the table -->
         <td> <b> Item name </b> </td>
+        <td> <b> Item Category </b> </td>
         <td> <b> Cost </b> </td>
       </tr>
 
@@ -15,11 +16,12 @@
       {{/each}}
 
     </table>
-    
+
 </template>
 
 <template name="IndividualExpense">
-  <td> {{name}} </td> 
+  <td> {{name}} </td>
+  <td> {{category}} </td>
   <td> {{price}} </td>
   <td> <button class="delete"> Delete </button> </td>
 </template>
