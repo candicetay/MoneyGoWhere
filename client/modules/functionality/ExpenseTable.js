@@ -1,4 +1,5 @@
 import {Expenses} from '../../../expenses.js';
+import SimpleSchema from 'simpl-schema';
 
 Template.ExpenseTable.helpers({
   expensesList : function () {
